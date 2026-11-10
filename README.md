@@ -12,7 +12,7 @@ Unofficial Node.js tools for Allen & Heath SQ digital mixing consoles.
 | [`@allen-heath-sq-tools/api`](packages/sq-api) | TypeScript API for controlling SQ consoles               |
 | [`@allen-heath-sq-tools/tui`](packages/sq-tui) | Terminal UI for monitoring and controlling an SQ console |
 | [`@allen-heath-sq-tools/osc`](packages/sq-osc) | OSC bridge — exposes all mixer parameters over OSC       |
-| [`sq-comp`](packages/sq-comp) | Bitfocus Companion module with direct TCP control and live feedback |
+| [`sq-comp`](packages/sq-comp) | Bitfocus Companion module that controls SQ consoles directly over TCP (no OSC bridge required), with parameter actions, feedback, and variables. Connection and button configuration are available offline. |
 
 ## Getting Started
 
@@ -20,6 +20,9 @@ Unofficial Node.js tools for Allen & Heath SQ digital mixing consoles.
 npm install
 npm run build
 ```
+
+To build an importable Bitfocus Companion module archive, run `npm run package:comp`.
+See [`packages/sq-comp`](packages/sq-comp) for setup instructions and API feedback limitations.
 
 ## Protocol
 
