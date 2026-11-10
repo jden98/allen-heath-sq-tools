@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../node_modules/@companion-module/base/assets/manifest.schema.json",
+  "id": "allenheath-sq-tcp",
+  "name": "Allen & Heath SQ (Direct TCP)",
+  "shortname": "SQ",
+  "description": "Direct TCP control and live parameter feedback for Allen & Heath SQ consoles",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "https://github.com/hrueger/allen-heath-sq-tools",
+  "bugs": "https://github.com/hrueger/allen-heath-sq-tools/issues",
+  "maintainers": [],
+  "legacyIds": [],
+  "runtime": {
+    "type": "node22",
+    "api": "nodejs-ipc",
+    "apiVersion": "1.15.1",
+    "entrypoint": "../dist/main.js"
+  },
+  "manufacturer": "Allen & Heath",
+  "products": ["SQ-5", "SQ-6", "SQ-7"],
+  "keywords": ["mixer", "audio", "TCP", "SQ"]
+}
